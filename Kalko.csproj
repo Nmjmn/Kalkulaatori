@@ -1,0 +1,31 @@
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Sisestage esimene arv: ");
+        int esimene = int.Parse(Console.ReadLine());
+
+        Console.Write("Sisestage teine arv: ");
+        int teine = int.Parse(Console.ReadLine());
+
+        Console.Write("Valige tehe (*,/,+,-): ");
+        string kolmas = (Console.ReadLine());
+
+        if (kolmas == "*")
+        {
+            Console.WriteLine(esimene * teine);
+        }
+        if (kolmas == "/")
+        {
+            Console.WriteLine(esimene / teine);
+        }
+        if (kolmas == "-")
+        {
+            Console.WriteLine(esimene - teine);
+        }
+        if (kolmas == "+")
+        {
+            Console.WriteLine(esimene + teine);
+        }
+    }
+}
